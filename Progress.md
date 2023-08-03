@@ -9,4 +9,7 @@
 2. Train on cycle A and then test on f
 3. Train on A and take support from F and then test on f again using meta learning
 
-  
+ # 3d meeting
+ 1. bug in the implmentation
+ 2. make sure that the data is shuffled correctly
+    
