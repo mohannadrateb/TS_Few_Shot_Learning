@@ -16,6 +16,7 @@
 # Last meeting
 1. task specfic encoder and task specfic decoder and common model
 2. chek labelhullacination implmentation
+3. the 2 baselines are labelhullicanation and maml
 
 # Questions 
 
