@@ -27,8 +27,9 @@
 3. I train the autoencoder on 1 dataset from the private dataset, then save this model and use it to encode the rest of the datasets. Should I train it for more training or is that enough?
 #  For label hallucination
 
-1. For the embeddings, I will train the common model but again here I will need 2 classifier heads based on the number of classes or should I concatenate all of them together? That means i will add the private datasets and public datasets in one big dataset after i encode the private datasets and this way i will only have classification head 
-2. After the pseudo labeling. I should relearn the embedding and classification head with decoder with a combination of distillation function and entropy loss function
+1. For the embeddings, I will train the common model but again here I will need 2 classifier heads based on the number of classes or should I concatenate all of them together? That means i will add the private datasets and public datasets in one big dataset after i encode the private datasets and this way i will only have classification head
+2. same problem how am i going to backprogate the loss from the classificationmodel to the embedding layer 
+3. After the pseudo labeling. I should relearn the embedding and classification head with decoder with a combination of distillation function and entropy loss function
 # For Maml:
 1. In Maml training should be built by a certain number of samples for example 5 samples per class → does that mean i rebuild the training dataset by keeping only the n number of samples of class
 The maml training is to just adjust the weights of the base dataset and then finetune it?
